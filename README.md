@@ -109,7 +109,7 @@ npm run lint
 ## 📝 Supported File Formats
 
 - **CSV**: Comma-separated values (primary format)
-- **Excel**: .xlsx and .xls files (automatically converted)
+- **Excel**: not supported, but planned in a future release
 
 ## 🗓️ Calendar Features
 
@@ -165,5 +165,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- Built with ❤️ for students who need better calendar integration
-- Inspired by the need to bridge academic and personal scheduling tools
+- Built with ❤️ by Henry Anyimadu, 2025
+- Inspired by Silas Hsu's [WebSTAC to Google Calendar](https://github.com/smhsu/webstacToCal)
