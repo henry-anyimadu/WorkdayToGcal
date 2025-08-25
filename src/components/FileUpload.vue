@@ -40,7 +40,7 @@
           </p>
           <p v-else class="file-name">{{ selectedFile.name }}</p>
           
-          <p class="file-types">Supported formats: CSV, Excel (.xlsx, .xls)</p>
+          <p class="file-types">Supported format: CSV (from Workday)</p>
         </div>
       </div>
     </div>
@@ -146,7 +146,7 @@ async function processFile() {
   try {
     const content = await readFileContent(selectedFile.value)
     emit('fileProcessed', content, selectedFile.value.name)
-  } catch (err) {
+  } catch {
     error.value = 'Failed to read file. Please try again.'
     emit('error', error.value)
   } finally {
@@ -183,29 +183,29 @@ function readFileContent(file: File): Promise<string> {
 }
 
 .upload-area {
-  border: 2px dashed #cbd5e1;
+  border: 2px dashed #e2e8f0;
   border-radius: 12px;
   padding: 3rem;
   text-align: center;
   cursor: pointer;
   transition: all 0.2s ease;
-  background: #f8fafc;
+  background: #f5efe6;
 }
 
 .upload-area:hover {
-  border-color: #3b82f6;
-  background: #eff6ff;
+  border-color: #9a3412;
+  background: #f3e7d4;
 }
 
 .upload-area.dragover {
-  border-color: #3b82f6;
-  background: #eff6ff;
+  border-color: #9a3412;
+  background: #f3e7d4;
   transform: scale(1.02);
 }
 
 .upload-area.has-file {
-  border-color: #10b981;
-  background: #ecfdf5;
+  border-color: #9a3412;
+  background: #f3e7d4;
 }
 
 .file-input {
@@ -220,32 +220,32 @@ function readFileContent(file: File): Promise<string> {
 }
 
 .upload-icon {
-  color: #64748b;
+  color: #7c2d12;
 }
 
 .upload-area.has-file .upload-icon {
-  color: #10b981;
+  color: #9a3412;
 }
 
 .upload-text h3 {
   margin: 0;
   font-size: 1.25rem;
   font-weight: 600;
-  color: #1e293b;
+  color: #7c2d12;
 }
 
 .upload-text p {
   margin: 0.5rem 0 0 0;
-  color: #64748b;
+  color: #7c2d12;
 }
 
 .file-name {
   font-weight: 600;
-  color: #10b981 !important;
+  color: #9a3412 !important;
 }
 
 .link-text {
-  color: #3b82f6;
+  color: #b91c1c;
   text-decoration: underline;
 }
 
@@ -290,21 +290,21 @@ function readFileContent(file: File): Promise<string> {
 }
 
 .btn-primary {
-  background: #3b82f6;
+  background: #b91c1c;
   color: white;
 }
 
 .btn-primary:hover:not(:disabled) {
-  background: #2563eb;
+  background: #991b1b;
 }
 
 .btn-secondary {
-  background: #f1f5f9;
-  color: #475569;
-  border: 1px solid #e2e8f0;
+  background: #f5efe6;
+  color: #7c2d12;
+  border: 1px solid #eadfcf;
 }
 
 .btn-secondary:hover:not(:disabled) {
-  background: #e2e8f0;
+  background: #efe5d6;
 }
 </style>

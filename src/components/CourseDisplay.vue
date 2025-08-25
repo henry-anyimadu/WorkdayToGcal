@@ -235,7 +235,7 @@ async function exportCalendar() {
 }
 
 .student-info {
-  background: white;
+  background: #f5efe6;
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -270,7 +270,7 @@ async function exportCalendar() {
 }
 
 .course-summary {
-  background: white;
+  background: #f5efe6;
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -297,7 +297,7 @@ async function exportCalendar() {
 .stat-number {
   font-size: 2rem;
   font-weight: 700;
-  color: #3b82f6;
+  color: #7c2d12;
 }
 
 .stat-label {
@@ -307,7 +307,7 @@ async function exportCalendar() {
 }
 
 .courses-section {
-  background: white;
+  background: #f5efe6;
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -349,12 +349,12 @@ async function exportCalendar() {
 }
 
 .btn-primary {
-  background: #3b82f6;
+  background: #b91c1c;
   color: white;
 }
 
 .btn-primary:hover:not(:disabled) {
-  background: #2563eb;
+  background: #991b1b;
 }
 
 .courses-grid {
@@ -371,8 +371,8 @@ async function exportCalendar() {
 }
 
 .course-card:hover {
-  border-color: #3b82f6;
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
+  border-color: #b91c1c;
+  box-shadow: 0 4px 12px rgba(185, 28, 28, 0.12);
 }
 
 .course-header {
@@ -386,7 +386,7 @@ async function exportCalendar() {
   margin: 0;
   font-size: 1.125rem;
   font-weight: 700;
-  color: #3b82f6;
+  color: #7c2d12;
 }
 
 .course-section {
@@ -485,7 +485,7 @@ async function exportCalendar() {
 
 .days {
   font-weight: 600;
-  color: #3b82f6;
+  color: #7c2d12;
   font-size: 0.875rem;
 }
 
