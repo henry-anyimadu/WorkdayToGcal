@@ -133,7 +133,7 @@ function resetApp() {
     </main>
 
     <footer class="app-footer">
-      <p>&copy; 2025 WashU Workday Parser. Made with ❤️ by Henry Anyimadu</p>
+      <p>&copy; 2025 WashU Workday Parser. Made with ❤️ by Henry Anyimadu <br /> Not affiliated with WashU.</p>
     </footer>
   </div>
 </template>
